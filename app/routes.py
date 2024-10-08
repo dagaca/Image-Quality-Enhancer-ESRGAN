@@ -83,7 +83,7 @@ def enhance_image_2x():
         app.logger.info("Received request to enhance image by 2x")
         if 'image' not in request.files:
             app.logger.error("No file part in the request")
-            return jsonify({"error": "No file part in the request."}), 400
+            return jsonify({'status': 'error', 'message': 'No image provided'}), 400
         file = request.files['image']
         if file.filename == '':
             app.logger.error("No selected file")
@@ -107,7 +107,7 @@ def enhance_image_2x():
         return jsonify({'error': 'Invalid input data format.'}), 400
     except Exception as e:
         app.logger.error(f"An unexpected error occurred: {str(e)}", exc_info=True)
-        return jsonify({'error': 'An unexpected error occurred.'}), 500
+        return jsonify({'status': 'error', 'message': str(e)}), 500
 
 # Route for 4x image enhancement
 @app.route('/enhance_image_4x', methods=['POST'])
@@ -175,7 +175,7 @@ def enhance_image_4x():
         app.logger.info("Received request to enhance image by 4x")
         if 'image' not in request.files:
             app.logger.error("No file part in the request")
-            return jsonify({"error": "No file part in the request."}), 400
+            return jsonify({'status': 'error', 'message': 'No image provided'}), 400
         file = request.files['image']
         if file.filename == '':
             app.logger.error("No selected file")
@@ -199,7 +199,7 @@ def enhance_image_4x():
         return jsonify({'error': 'Invalid input data format.'}), 400
     except Exception as e:
         app.logger.error(f"An unexpected error occurred: {str(e)}", exc_info=True)
-        return jsonify({'error': 'An unexpected error occurred.'}), 500
+        return jsonify({'status': 'error', 'message': str(e)}), 500
 
 # Route for same-size image enhancement
 @app.route('/enhance_image_same_size', methods=['POST'])
@@ -267,7 +267,7 @@ def enhance_image_same_size():
         app.logger.info("Received request to enhance image without changing size")
         if 'image' not in request.files:
             app.logger.error("No file part in the request")
-            return jsonify({"error": "No file part in the request."}), 400
+            return jsonify({'status': 'error', 'message': 'No image provided'}), 400
         file = request.files['image']
         if file.filename == '':
             app.logger.error("No selected file")
@@ -293,4 +293,4 @@ def enhance_image_same_size():
         return jsonify({'error': 'Invalid input data format.'}), 400
     except Exception as e:
         app.logger.error(f"An unexpected error occurred: {str(e)}", exc_info=True)
-        return jsonify({'error': 'An unexpected error occurred.'}), 500
+        return jsonify({'status': 'error', 'message': str(e)}), 500
