@@ -2,6 +2,14 @@
 
 An advanced image enhancement web application powered by the Real-ESRGAN model, allowing users to upscale images with high quality. With this tool, users can upload an image, enhance it, and compare the original and processed images side-by-side for visual clarity. 
 
+## 🎥 Project Demo
+
+Watch the project in action! Check out the video below for a demonstration of the application's features, including image enhancement, side-by-side comparison, and download functionality.
+
+
+https://github.com/user-attachments/assets/4b9fd78b-01ca-41b7-b09c-51605a36f63a
+
+
 ## 📁 Project Structure
 
 ```plaintext
