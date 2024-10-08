@@ -1,0 +1,11 @@
+Flask==2.2.5
+Werkzeug==2.2.3
+flask_cors==5.0.0
+flasgger==0.9.7.1
+python-dotenv==0.21.0
+pillow==10.4.0
+torch==1.13.0
+torchvision==0.14.0
+basicsr==1.4.2
+realesrgan==0.3.0
+numpy==1.22.4

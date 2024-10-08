@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Enhancement Tool</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container">
+        <header>
+            <h1>Image Enhancement Tool</h1>
+            <p>Upload an image and choose an enhancement option to improve its quality.</p>
+        </header>
+
+        <!-- Görüntü yükleme bölümü -->
+        <section class="upload-section">
+            <label for="image-upload" class="button">Select Image</label>
+            <input type="file" id="image-upload" accept="image/*" onchange="previewImage(event)">
+        </section>
+
+        <!-- Orijinal görüntü önizleme bölümü -->
+        <section id="image-preview" class="hidden">
+            <h2>Original Image</h2>
+            <img id="original-image" alt="Preview of the uploaded image">
+        </section>
+
+        <!-- İyileştirme seçenekleri -->
+        <section id="options-section" class="hidden">
+            <h2>Select Enhancement Option</h2>
+            <div class="buttons">
+                <button class="enhance-button" data-type="2x">Enhance 2x</button>
+                <button class="enhance-button" data-type="4x">Enhance 4x</button>
+                <button class="enhance-button" data-type="same_size">Same Size Enhance</button>
+            </div>
+        </section>
+
+        <!-- Karşılaştırma bölümü -->
+        <section id="enhanced-section" class="hidden">
+            <h2>Compare Original and Enhanced Image</h2>
+            <div id="compare-container" class="compare-container">
+                <img id="original-image-compare" class="compare-img" alt="Original Image">
+                <div id="enhanced-wrapper" class="enhanced-wrapper">
+                    <img id="enhanced-image-compare" class="compare-img" alt="Enhanced Image">
+                </div>
+                <div id="slider"></div>
+            </div>
+            <button id="download-button" class="button hidden">Download Enhanced Image</button>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
