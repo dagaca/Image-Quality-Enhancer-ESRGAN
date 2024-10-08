@@ -1,6 +1,7 @@
 """
 This module runs the Flask application.
 """
+import os
 from app import app  # Import the 'app' variable from the app module
 
 if __name__ == '__main__':
