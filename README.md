@@ -5,7 +5,7 @@ An advanced image enhancement web application powered by the Real-ESRGAN model, 
 ## 📁 Project Structure
 
 ```plaintext
-image-enhancement-tool/
+image-quality-enhancer-esrgan/
 │
 ├── app/
 │   ├── __init__.py            # Initializes the Flask application
@@ -20,11 +20,9 @@ image-enhancement-tool/
 ├── models/
 │   └── RealESRGAN_x4plus.pth  # Real-ESRGAN pre-trained model
 │
-├── static/
+├── templates/
 │   ├── style.css              # CSS styling for the web interface
 │   └── script.js              # JavaScript for frontend interactions
-│
-├── templates/
 │   └── index.html             # HTML structure for the web interface
 │
 ├── logs/                      # Directory for storing application logs
@@ -33,17 +31,11 @@ image-enhancement-tool/
 ├── .env                       # Environment variables for configuration
 ├── requirements.txt           # Python dependencies
 └── run.py                     # Script to start the Flask application
+```
 
 ## ⚙️ Getting Started
 
 Follow these instructions to set up and run the application on your local machine.
-
-### Prerequisites
-
-Ensure you have the following installed:
-
-- **Python** 3.7 or above
-- **pip** for Python package management
 
 ### Installation
 
