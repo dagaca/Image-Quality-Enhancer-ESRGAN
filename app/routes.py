@@ -84,7 +84,14 @@ def enhance_image_2x():
         if 'image' not in request.files:
             app.logger.error("No file part in the request")
             return jsonify({'status': 'error', 'message': 'No image provided'}), 400
+
         file = request.files['image']
+        if file:
+            app.logger.info(f'Received image file: {file.filename}')
+        else:
+            app.logger.warning('No image file found in the request.')
+            return jsonify({'status': 'error', 'message': 'Image file is empty'}), 400
+
         if file.filename == '':
             app.logger.error("No selected file")
             return jsonify({"error": "No selected file."}), 400
@@ -176,10 +183,14 @@ def enhance_image_4x():
         if 'image' not in request.files:
             app.logger.error("No file part in the request")
             return jsonify({'status': 'error', 'message': 'No image provided'}), 400
+
         file = request.files['image']
-        if file.filename == '':
-            app.logger.error("No selected file")
-            return jsonify({"error": "No selected file."}), 400
+        if file:
+            app.logger.info(f'Received image file: {file.filename}')
+        else:
+            app.logger.warning('No image file found in the request.')
+            return jsonify({'status': 'error', 'message': 'Image file is empty'}), 400
+
         # Save the uploaded file to a temporary directory inside the enhancement function
         output_image_base64 = process_image_enhancement(file, 4, upscaler)
         app.logger.info("Image enhanced successfully")
@@ -268,10 +279,14 @@ def enhance_image_same_size():
         if 'image' not in request.files:
             app.logger.error("No file part in the request")
             return jsonify({'status': 'error', 'message': 'No image provided'}), 400
+
         file = request.files['image']
-        if file.filename == '':
-            app.logger.error("No selected file")
-            return jsonify({"error": "No selected file."}), 400
+        if file:
+            app.logger.info(f'Received image file: {file.filename}')
+        else:
+            app.logger.warning('No image file found in the request.')
+            return jsonify({'status': 'error', 'message': 'Image file is empty'}), 400
+
         # Save the uploaded file to a temporary directory inside the enhancement function
         output_image_base64 = process_image_enhancement(
             file, 1, upscaler
