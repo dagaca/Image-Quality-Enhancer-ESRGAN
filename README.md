@@ -97,17 +97,21 @@ The application uses a `.env` file to manage environment-specific settings. Upda
 
 Listed in `requirements.txt`, some of the core dependencies include:
 
-- Flask
-- Werkzeug
-- flask_cors
-- flasgger
-- python-dotenv
-- pillow
-- torch
-- torchvision
-- basicsr
-- realesrgan
-- numpy
+- absl-py==2.1.0
+- addict==2.4.0
+- anyio==4.6.0
+- basicsr==1.4.2
+- flasgger==0.9.7.1
+- Flask==2.2.5
+- Flask-Cors==5.0.0
+- numpy==1.24.0
+- opencv-python==4.7.0.72
+- Pillow==10.0.0
+- requests==2.28.1
+- torch==2.0.1
+- torchvision==0.15.2
+- realesrgan==0.3.0
+- python-dotenv==0.21.0
 
 To install all dependencies, run:
 
