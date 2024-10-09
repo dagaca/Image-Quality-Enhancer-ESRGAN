@@ -10,9 +10,9 @@ Additionally, I've included visual comparisons of the enhanced images for better
 
 https://github.com/user-attachments/assets/4b9fd78b-01ca-41b7-b09c-51605a36f63a
 
-![Example1](https://github.com/user-attachments/assets/a73c204a-bb19-4339-ae29-bfa78aa2a0b6)
+![Example1](https://github.com/user-attachments/assets/06238e9f-0fa0-456b-b8f5-2ef69cf380e8)
 
-![Example2](https://github.com/user-attachments/assets/5d87e1df-3221-41a1-b9f8-eb037b73328e)
+![Example2](https://github.com/user-attachments/assets/5492a7b8-5299-4014-a1f9-faeb673c36b6)
 
 
 ## 📁 Project Structure
