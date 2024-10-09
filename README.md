@@ -6,8 +6,13 @@ An advanced image enhancement web application powered by the Real-ESRGAN model, 
 
 Watch the project in action! Check out the video below for a demonstration of the application's features, including image enhancement, side-by-side comparison, and download functionality.
 
+Additionally, I've included visual comparisons of the enhanced images for better insight into the application's capabilities.
 
 https://github.com/user-attachments/assets/4b9fd78b-01ca-41b7-b09c-51605a36f63a
+
+![Example1](https://github.com/user-attachments/assets/a73c204a-bb19-4339-ae29-bfa78aa2a0b6)
+
+![Example2](https://github.com/user-attachments/assets/5d87e1df-3221-41a1-b9f8-eb037b73328e)
 
 
 ## 📁 Project Structure
